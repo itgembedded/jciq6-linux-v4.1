@@ -6486,6 +6486,8 @@ static void read_local_oob_ext_data_complete(struct hci_dev *hdev, u8 status,
 
 	mgmt_cp = cmd->param;
 
+	h192 = NULL;	// added to avoid possible uninitialized var warnings below
+	r192 = NULL;
 	if (status) {
 		status = mgmt_status(status);
 		eir_len = 0;
