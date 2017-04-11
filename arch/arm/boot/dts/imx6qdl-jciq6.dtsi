@@ -471,7 +471,7 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_usdhc2>;
 	bus-width = <4>;
-	cd-gpios = <&gpio1 4 0>;
+	cd-gpios = <&gpio1 4 1>;	/* changed to active LO */
 	wp-gpios = <&gpio1 2 0>;
 	no-1-8-v;
 	keep-power-in-suspend;
